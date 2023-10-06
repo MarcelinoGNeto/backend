@@ -54,7 +54,7 @@ class SaidaController {
       // Cria a saída com os produtos encontrados
       const saidaCompleta = {
         destinatario: novaSaida.destinatario,
-        produtos: produtosEncontrados,
+        produtos: novaSaida.produtos,
       };
   
       const saidaCriada = await saida.create(saidaCompleta);
